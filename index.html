@@ -3,11 +3,204 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jaromír Strejček</title>
-  <meta name="robots" content="noindex">
+  <title>Jaromír „Jaro“ Strejček – produkťák, business analytik a product owner</title>
+  <meta name="description" content="Jaro Strejček – produkťák na volné noze. Business analytik, product owner a product manager. Plně remote, většinu roku z jihovýchodní Asie.">
+  <meta name="author" content="Jaromír Strejček">
+  <meta name="theme-color" content="#f3f3f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131315" media="(prefers-color-scheme: dark)">
+  <script>
+    // Při příchodu zvenku přesměruje podle uložené volby, jinak podle jazyka prohlížeče. Vyhledávače a AI agenty ne.
+    (function () {
+      var d = document.documentElement, lang = null;
+      try { lang = localStorage.getItem('itisjaro.lang'); } catch (e) {}
+      if (document.referrer.indexOf(location.origin + '/') === 0) return;
+      if (/bot|crawl|spider|slurp|agent|gpt|claude|perplexity|facebookexternalhit|preview|lighthouse/i.test(navigator.userAgent)) return;
+      if (lang !== 'cs' && lang !== 'en') {
+        lang = 'en';
+        var prefs = navigator.languages || [navigator.language || ''];
+        for (var i = 0; i < prefs.length; i++) {
+          if (/^(cs|sk)\b/i.test(prefs[i])) { lang = 'cs'; break; }
+          if (/^en\b/i.test(prefs[i])) break;
+        }
+      }
+      if (lang !== d.lang) location.replace(lang === 'en' ? '/en/' : '/');
+    })();
+  </script>
+  <link rel="canonical" href="https://itisjaro.cz/">
+  <link rel="alternate" hreflang="cs" href="https://itisjaro.cz/">
+  <link rel="alternate" hreflang="en" href="https://itisjaro.cz/en/">
+  <link rel="alternate" hreflang="x-default" href="https://itisjaro.cz/en/">
+  <link rel="alternate" type="text/plain" href="https://itisjaro.cz/llms.txt" title="llms.txt">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/Switzer-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/site.js" defer></script>
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Jaromír Strejček">
+  <meta property="og:title" content="Jaromír „Jaro“ Strejček">
+  <meta property="og:description" content="Produkťák na volné noze. Business analytik, product owner, product manager. Plně remote z jihovýchodní Asie.">
+  <meta property="og:url" content="https://itisjaro.cz/">
+  <meta property="og:image" content="https://itisjaro.cz/img/og-cs.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="profile:first_name" content="Jaromír">
+  <meta property="profile:last_name" content="Strejček">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://itisjaro.cz/",
+    "inLanguage": "cs",
+    "dateModified": "2026-10-19",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://itisjaro.cz/#jaro",
+      "name": "Jaromír Strejček",
+      "alternateName": ["Jaro", "Jaro Strejček", "Jaromir Strejcek", "itisjaro"],
+      "url": "https://itisjaro.cz/",
+      "email": "mailto:jaro@itisjaro.cz",
+      "jobTitle": "Business analytik, product owner a product manager na volné noze",
+      "description": "Produkťák na volné noze. Dělá business analytika, product ownera, product managera nebo IT analytika, občas táhne delivery. Design a UX, prototypy, AI a automatizace. Plně remote, většinu roku v jihovýchodní Asii, léto v Evropě.",
+      "nationality": "Czech",
+      "knowsLanguage": ["cs", "en", "es"],
+      "knowsAbout": ["Product management", "Product ownership", "Business analýza", "IT analýza", "Delivery management", "UX design", "Prototypování", "Fintech", "Mobilní bankovnictví", "AI agenti", "Automatizace"],
+      "sameAs": [
+        "https://www.linkedin.com/in/strejcekjaromir",
+        "https://www.instagram.com/itisjaro"
+      ]
+    }
+  }
+  </script>
 </head>
-<body style="font-family: Georgia, serif; max-width: 40rem; margin: 4rem auto; padding: 0 1.25rem;">
-  <h1>Jaromír Strejček</h1>
-  <p>Web se připravuje. <a href="mailto:jaro@itisjaro.cz">jaro@itisjaro.cz</a></p>
+<body>
+<div class="page">
+
+  <header class="top">
+    <a class="brand" href="/">itisjaro</a>
+    <div class="top-right">
+      <nav class="lang" aria-label="Jazyk">
+      <a href="/" hreflang="cs" lang="cs" aria-current="page">CZ</a>
+      <span aria-hidden="true">/</span>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+      </nav>
+      <a class="cta" href="#kontakt">Napiš mi</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Jaromír Strejček</h1>
+      <p class="nick">„Jaro“ je přezdívka, zkrácenina Jaromíra. A ano, jako roční období.</p>
+    </div>
+    <hr class="full">
+    <div class="hero">
+      <p class="lead">Jsem produktově založený člověk. Nejradši jsem na pomezí byznysu, designu a technologií, tam, kde se rozhoduje, co se bude dělat.</p>
+      <p>Na projektech dělám business analytika, product ownera, product managera nebo IT analytika, občas táhnu delivery. Role se mění, přístup ne: pochopit byznys, myslet na uživatele a nebát se přiložit ruku k dílu. Klikací prototyp mívám často hotový dřív, než někdo dopíše zadání.</p>
+      <p>Pracuju plně remote, většinu roku někde v jihovýchodní Asii. Léto obvykle trávím v Evropě.</p>
+    </div>
+
+    <section id="co-delam">
+      <h2>Co dělám</h2>
+      <div>
+        <ul>
+          <li><strong>Produkt.</strong> Discovery, rozhovory s byznysem i uživateli, priority a roadmapa. Rozhoduju, co se bude dělat, a hlavně co ne. Hlídám, aby výsledek dával smysl lidem, kteří ho budou používat, a ne jen aby prošel akceptací.</li>
+          <li><strong>Analýza.</strong> Procesy, požadavky, integrace a API. Píšu zadání, ve kterém se vývojáři vyznají a nemusí se pořád doptávat.</li>
+          <li><strong>Design a UX.</strong> User flow, wireframy, klikací prototypy. Než se napíše první řádek kódu, chci vidět, jak se to bude používat.</li>
+          <li><strong>Prototypy a AI.</strong> Nečekám, až to za mě udělá někdo jiný. Funkční prototyp, automatizace nebo AI agent je nejrychlejší způsob, jak ověřit, jestli nápad funguje.</li>
+        </ul>
+        <p class="note">Obory: fintech a bankovnictví, pojišťovnictví, automotive, telco, AI produkty, veřejná správa.</p>
+      </div>
+    </section>
+
+    <section id="jak-pracuju">
+      <h2>Jak pracuju</h2>
+      <div>
+        <ul>
+          <li><strong>Plně remote.</strong></li>
+          <li><strong>Nejčastěji part-time a dlouhodobě.</strong> Tak mi to sedí nejvíc: projekt znám do hloubky a pořád na něj mám čerstvou hlavu.</li>
+          <li><strong>Oproti Evropě jsem obvykle 5–7 hodin napřed.</strong> Cally si nejradši dávám na evropské dopoledne (CET).</li>
+          <li><strong>Čeština a angličtina.</strong> Španělsky se domluvím, ale smlouvu bych v ní radši nevyjednával.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="jak-premyslim">
+      <h2>Jak přemýšlím</h2>
+      <div>
+        <ul>
+          <li><strong>Nejdřív ukázat, pak popisovat.</strong> Prototyp řekne víc než deset stran dokumentace.</li>
+          <li><strong>Jednoduše.</strong> Čím míň se toho může rozbít, tím líp. Radši jednoduché řešení, které běží samo, než chytré, o které se musí pořád někdo starat.</li>
+          <li><strong>Nejdřív ověřit.</strong> Radši si to vyzkouším hned, než abych na problém narazil až na produkci.</li>
+          <li><strong>Vlastní hlavou.</strong> Rozhoduju podle toho, čemu rozumím, ne podle toho, co je zrovna v kurzu.</li>
+          <li><strong>Svoboda.</strong> Proto pracuju odkudkoliv a beru projekty, za kterými si můžu stát.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ted">
+      <h2>Teď</h2>
+      <div>
+        <ul>
+          <li>Jsem v Indonésii.</li>
+          <li>Mám rozjetých několik projektů najednou. Někde dělám business analytika, jinde product ownera, jinde product nebo project managera.</li>
+          <li>Ve volném čase se naplno věnuju <a href="https://pauzadot.cz">pauza.</a>, sbírce krátkých logických her pro iPhone. Offline, bez reklam a bez sledování.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cesta">
+      <h2>Cesta</h2>
+      <div>
+        <p>Začínal jsem na IT supportu a s každou další rolí jsem se dostal blíž k produktu:</p>
+        <ol class="path">
+          <li>IT support</li>
+          <li>IT analytik</li>
+          <li>Business analytik</li>
+          <li>Product owner v AI startupu</li>
+          <li>Business analytik a product owner zároveň</li>
+        </ol>
+        <p>Posledních pět let jsem na volné noze.</p>
+      </div>
+    </section>
+
+    <section id="domov">
+      <h2>Domov</h2>
+      <div>
+        <p>Vyrostl jsem ve středních Čechách, pak jsem žil v Praze a na Kanárech. Teď si domov hledám různě po světě. Ale upřímně, doma jsem všude, kde mám zubní kartáček.</p>
+      </div>
+    </section>
+
+    <section id="mimo-praci">
+      <h2>Mimo práci</h2>
+      <div>
+        <p>Jsem hodně sportovní typ. Posledních pár let mě nejvíc chytil surf, scuba diving, freediving a lezení. Ale přemluvit se nechám skoro na cokoliv.</p>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <div>
+        <p>Máš projekt, nápad, nebo mě chceš vytáhnout na surf? Nejrychleji odpovídám na Instagramu, na cokoliv formálnějšího radši e-mail.</p>
+        <ul class="links">
+          <li><a href="https://www.instagram.com/itisjaro" rel="me">Instagram</a></li>
+          <li><a href="mailto:jaro@itisjaro.cz">jaro@itisjaro.cz</a></li>
+          <li><a href="https://www.linkedin.com/in/strejcekjaromir" rel="me">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Jaromír Strejček
+  </footer>
+
+</div>
 </body>
 </html>

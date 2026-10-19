@@ -1,0 +1,5 @@
+# Vyhledávače i AI agenti jsou vítáni.
+User-agent: *
+Allow: /
+
+Sitemap: https://itisjaro.cz/sitemap.xml
